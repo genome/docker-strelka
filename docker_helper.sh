@@ -17,4 +17,4 @@ OUTPUT_DIR=$4
 $STRELKA_INSTALL_DIR/bin/configureStrelkaWorkflow.pl --tumor=$TUMOR_BAM --normal=$NORMAL_BAM --ref=$REFERENCE --output-dir=$OUTPUT_DIR --config=$STRELKA_INSTALL_DIR/etc/strelka_config_bwa_default.ini
 
 cd $OUTPUT_DIR
-make -j 4
+make -j 8
