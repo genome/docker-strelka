@@ -29,5 +29,5 @@ WORKDIR /
 RUN rm -rf /tmp/strelka*
 
 #strelka requires a couple steps to run, so add a helper script to sequence those
-ADD docker_helper.sh /usr/bin/
+COPY docker_helper.sh /usr/bin/
 ENTRYPOINT ["/usr/bin/docker_helper.sh"]
